@@ -1,0 +1,40 @@
+{
+  "name": "yuwa",
+  "version": "1.0.0",
+  "description": "シンプルで軽量なUIフレームワーク",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:minify",
+    "build:minify": "terser lib/index.js -o dist/index.js -c -m",
+    "prepublishOnly": "npm run build",
+    "test": "echo 'No tests yet'",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "terser": "^5.28.1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "keywords": [
+    "ui",
+    "framework",
+    "javascript",
+    "dom"
+  ],
+  "author": "yaona807",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaona807/yuwa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yaona807/yuwa/issues"
+  },
+  "homepage": "https://github.com/yaona807/yuwa#readme"
+}
