@@ -13,9 +13,12 @@
     "build:minify": "terser lib/index.js -o dist/index.js -c -m",
     "prepublishOnly": "npm run build",
     "test": "echo 'No tests yet'",
-    "start": "node server.js"
+    "start": "node server.js",
+    "predeploy": "rm -rf .gh-pages-temp && mkdir -p .gh-pages-temp && cp -R public/site/* .gh-pages-temp && rm -rf .gh-pages-temp/.git",
+    "deploy": "gh-pages --dist .gh-pages-temp --branch gh-pages"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "terser": "^5.28.1"
   },
   "dependencies": {
@@ -36,5 +39,5 @@
   "bugs": {
     "url": "https://github.com/yaona807/yuwa/issues"
   },
-  "homepage": "https://github.com/yaona807/yuwa#readme"
+  "homepage": "https://yaona807.github.io/yuwa"
 }

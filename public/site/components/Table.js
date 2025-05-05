@@ -1,4 +1,4 @@
-import { withProps } from '../../lib/index.js';
+import Yuwa from '../lib/yuwa.js';
 
 function createTableHeader({ headers }) {
     return {
@@ -30,9 +30,9 @@ export function Table({ headers, rows }) {
         children: [
             {
                 tagName: 'thead',
-                children: [withProps(createTableHeader, { headers })]
+                children: [Yuwa.withProps(createTableHeader, { headers })]
             },
-            withProps(createTableBody, { rows })
+            Yuwa.withProps(createTableBody, { rows })
         ]
     };
 } 

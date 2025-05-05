@@ -1,4 +1,4 @@
-import Yuwa from '../../../lib/index.js';
+import Yuwa from '../lib/yuwa.js';
 
 export function Note({ content }) {
     return {
