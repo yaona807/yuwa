@@ -1,4 +1,4 @@
-import Yuwa from 'yuwa';
+import Yuwa from '../../lib/index.js';
 
 function createTableHeader({ headers }) {
     return {

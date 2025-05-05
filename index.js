@@ -1,4 +1,4 @@
-import Yuwa from 'yuwa';
+import Yuwa from '../lib/index.js';
 import { Documentation } from './components/Documentation.js';
 
 // ドキュメントをレンダリング
