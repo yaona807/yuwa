@@ -1,4 +1,4 @@
-import Yuwa from '../../../lib/index.js';
+import Yuwa from 'yuwa';
 
 export function Section({ title, content }) {
     return {

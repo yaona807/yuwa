@@ -1,4 +1,4 @@
-import Yuwa from '../../../lib/index.js';
+import Yuwa from 'yuwa';
 import { Header } from './Header.js';
 import { Section } from './Section.js';
 import { CodeBlock } from './CodeBlock.js';
