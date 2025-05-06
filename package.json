@@ -2,8 +2,15 @@
   "name": "yuwa",
   "version": "1.0.0",
   "description": "シンプルで軽量なUIフレームワーク",
-  "main": "index.js",
-  "module": "index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.js",
+      "default": "./lib/index.js"
+    }
+  },
   "type": "module",
   "files": [
     "lib"
