@@ -2,11 +2,11 @@
   "name": "yuwa",
   "version": "1.0.0",
   "description": "シンプルで軽量なUIフレームワーク",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "index.js",
+  "module": "index.js",
   "type": "module",
   "files": [
-    "dist"
+    "lib"
   ],
   "scripts": {
     "build": "npm run build:minify",
